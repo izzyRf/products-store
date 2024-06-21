@@ -4,8 +4,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-
-    <main  className="min-h-screen flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-900">
+    <main  className="min-h-screen flex flex-col items-center justify-center bg-gray-100 dark:bg-slate-200">
       {/* Enlaces */}
       <div className="mb-32 grid text-center">
    
@@ -20,9 +19,6 @@ export default function Home() {
               Explora la selección de productos.
             </p>
           </Link>
-
-        {/* Otros enlaces (Docs, Learn, etc.) */}
-        {/* ... */}
       </div>
     </main>
   );
