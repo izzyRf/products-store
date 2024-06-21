@@ -1,4 +1,5 @@
 export interface Product {
+  data: any;
   id: number;
   attributes: Attributes4;
 }
