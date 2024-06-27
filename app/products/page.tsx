@@ -4,6 +4,7 @@ import { pages } from "next/dist/build/templates/app-page";
 import { fetchApi } from "../helpers/fetch-api";
 import { Product } from "../interfaces/product";
 import CardProduct from "../components/CardProduct";
+import RowProduct from "../components/RowProduct";
 import PagePagination from "../components/PagePagination";
 
 
@@ -50,7 +51,7 @@ const Products = async ({searchParams}: Props) => {
                     <span className=" bg-clip-text text-slate-800">Hello!</span> 
                 </h4>
                 <p className="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Welcome to our digital boutique! Find exclusive products and enjoy a seamless shopping experience </p>
-                <div className="mt-4 grid xs:grid-cols-12 sm::grid-cols-2  md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4 gap-5">
+                {/* <div className="mt-4 grid xs:grid-cols-12 sm::grid-cols-2  md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4 gap-5">
                     {
                         data.map((product: Product ) => (
                             <CardProduct
@@ -59,7 +60,21 @@ const Products = async ({searchParams}: Props) => {
                             />
                         ))
                     }
-                </div>
+                </div> */}
+
+                <div >
+                    {
+                        data.map((product: Product ) => (
+                            <RowProduct
+                                key= {product.id}
+                                product = {product}
+                            />
+                        ))
+                    }
+                </div> 
+
+
+
                 <br/>
                 <div className="flex justify-center mt-10">
                     <PagePagination pagination={pagination} />

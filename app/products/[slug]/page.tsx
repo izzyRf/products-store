@@ -52,6 +52,7 @@ const Slug = async ({params}: Props) => {
     }
 
     return ( 
+    <div>
         <div className="grid gap-4 mt-20">
             <div className="flex items-center justify-center">
         <h1>{name}</h1>
@@ -80,6 +81,22 @@ const Slug = async ({params}: Props) => {
                 {JSON.stringify(product, null, 2)}
             </pre> */}
         </div>
+            <div className="mt-5 grid grid-cols-4 gap-1">
+            <div>
+                <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="" />
+            </div>
+            <div>
+                <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" alt="" />
+            </div>
+            <div>
+                <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" alt="" />
+            </div>
+            <div>
+                <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" alt="" />
+            </div>
+        </div>
+        <br/>
+    </div>
         ) ;
 }
 
