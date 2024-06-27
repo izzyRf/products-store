@@ -37,7 +37,7 @@ interface Props {
 }
 
 const Products = async ({searchParams}: Props) => {
-    console.log(searchParams);
+    /* console.log(searchParams); */
     const {page} = searchParams;
     let pageNumber = page ? parseInt(page): 1;
     if (isNaN(pageNumber) || pageNumber < 1) {

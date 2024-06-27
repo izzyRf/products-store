@@ -19,7 +19,7 @@ const CardItemProduct = ({product} : Props) => {
           <img
             src={url}
             alt={`image ${name}`}
-             className=" mt-5 w-full bg-white border border-gray-200 rounded-lg hover:drop-shadow-md transform transition-transform hover:scale-95"
+            className="w-full bg-white border border-gray-200 rounded-lg hover:drop-shadow-md transform transition-transform hover:scale-95"
           />
        
       </div>

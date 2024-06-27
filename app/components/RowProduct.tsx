@@ -28,7 +28,7 @@ const RowProduct = ({product} : Props) => {
     /* const {url, width, height} = image.data.attributes */
 
     return( 
-        <div className="grid grid-cols-4 gap-4">
+        <div className="grid grid-cols-4 gap-4 mt-7 mb-7">
         <div className="col-span-full md:col-span-1">
           <CardProduct key={product.id} product={product} />
         </div>
